@@ -1,0 +1,61 @@
+.wrapper{
+    
+}
+
+.headerWrapper{
+    display:grid;
+    height:50px;
+    box-shadow: var(--bs-light);
+    position:fixed;
+    width:100vw;
+    grid-template-columns: 50px auto;
+    background-color: white;
+    z-index:var(--nav-header);
+    grid-area:
+        'icon header'
+    ;
+}
+
+.header{
+    font-weight:500;
+    align-self:center;
+    justify-self:center;
+    font-size:var(--f-3);
+}
+
+.icon{
+    align-self: center;
+    justify-self: center;
+}
+
+.menuWrapper{
+    position:fixed;
+    top:0;
+    background-color: var(--lightgray);
+    height:100vh;
+    width:66%;
+    z-index:var(--nav-menu);
+}
+
+.spacer{
+    height:50px;
+}
+
+.routeWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+}
+
+.route{
+    font-family:var(--font-secondary);
+    font-size:var(--f-2);
+    color:black;
+
+}
+
+.activeRoute{
+    background-color: var(--gray);
+    color:var(--main-color);
+}

@@ -9,19 +9,35 @@ ul, p, h1, h2, h3, h4{
   margin:0px;
 }
 
+li{
+  list-style: none;
+}
+
 a{
   text-decoration: none;
+  color:black;
 }
 
 :root{
 
   /*COLORS*/
   --lightgray:#E0E0E0;
-  --purple:#8685EF;
+  --gray:#c0c0c0;
+  --darkgray:#969696;
+  --main-color:#3555D5;
 
   /*FONTS*/
   --font-secondary:"Arial", sans-serif;
   --font-main:"Times New Roman", serif;
+
+  /*FONT SIZES*/
+  --f-0:0.6rem;
+  --f-1:0.8rem;
+  --f-2:1rem;
+  --f-3:1.2rem;
+  --f-4:1.4rem;
+  --f-5:1.6rem;
+
 
   /*Z-INDEX*/
   --nav-header:100;
@@ -29,5 +45,38 @@ a{
 
   /*BOX-SHADOW*/
   --bs-light:1px 1px 5px var(--lightgray);
+
+  /*MARGIN*/
+  --m-0:5px;
+  --m-1:10px;
+
+  /*PADDING*/
+  --p-0:5px;
+  --p-1:10px;
+
+  /*HEADER*/
+  --font-family-header:var(--font-main);
+  --font-weight-header:500;
+  --font-size-header-sm:1rem;
+  --font-size-header-md:1.25rem;
+  --font-size-header-lg:1.5rem;
+  --font-size-header-xl:1.75rem;
+
+  /*TEXT*/
+  --font-family-text:var(--font-secondary);
+  --font-weight-text:500;
+  --font-size-text-sm:0.75rem;
+  --font-size-text-md:1rem;
+  --font-size-text-lg:1.25rem;
+  --font-size-text-xl:1.5rem;
+
+  /*LABEL*/
+  --font-family-label:var(--font-secondary);
+  --font-weight-label:500;
+  --font-size-label-sm:0.75rem;
+  --font-size-label-md:1rem;
+  --font-size-label-lg:1.25rem;
+  --font-size-label-xl:1.5rem;
+
 
 }

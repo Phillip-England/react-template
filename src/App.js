@@ -1,23 +1,35 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 import Home from './routes/Home'
 import Contact from './routes/Contact'
-import Projects from './routes/Projects'
+import Ideas from './routes/Ideas'
 import PageNotFound from './routes/PageNotFound'
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
+import Spacer from './components/Spacer/Spacer'
 
 function App() {
 
+  let [navState, setNavState] = useState(false)
+
   return (
     <BrowserRouter> 
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/projects' element={<Projects/>}/>
-        <Route path='*' element={<PageNotFound/>}/>
-      </Routes>
+      <Navbar
+        navState={navState}
+        setNavState={setNavState}
+      />
+      <Spacer
+        style={{
+          height:'50px',
+        }}
+      />
+        <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/ideas' element={<Ideas/>}/>
+            <Route path='*' element={<PageNotFound/>}/>
+        </Routes>
     </BrowserRouter>
   );
 }
